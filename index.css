@@ -1,0 +1,532 @@
+body {
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+
+section {
+    width: 100%;
+    transition: all .3s;
+}
+
+#sec-1 .container {
+    background-color: white;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    height: 400px;
+    width: 70%;
+    background-color: rgb(251, 252, 252);
+    margin-right: 30px;
+    padding: 30px;
+
+}
+
+.projecs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.hidden:nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.hidden:nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.contact {
+    opacity: 0;
+    filter: blur(5s);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.contact:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.contact:nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.contact:nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.contact i {
+    font-size: 45px;
+    margin: 0 60px 0 50px;
+}
+
+.show1 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 2s;
+}
+
+.skills_para a:hover {
+    color: blue;
+}
+
+.contact a:hover {
+    color: blue;
+}
+
+.skills_para {
+    margin: 20px 0 10px 0;
+    padding: 30px 20px 20px 30px;
+    opacity: 0;
+    filter: blur(5s);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show2 {
+    opacity: 0.7;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 2s;
+}
+
+.skills_para:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.skills_para:nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.skills_para:nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: rgb(48, 3, 94);
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background-color: rgb(209, 209, 248);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links {
+    margin-right: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    font-size: medium;
+}
+
+.about {
+    margin-top: -200px;
+}
+
+#sec-1 {
+    background-image: url("pexels-pixabay-355770.jpg");
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+}
+
+#sec-2 {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-3 {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 77px;
+}
+
+#sec-3 .container {
+    margin: 0 30px 0 30px;
+}
+
+#sec-4 {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 77px;
+}
+
+#sec-5 {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 77px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    height: 77px;
+    background-color: black;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(246, 244, 244);
+    margin: 0 0 0 105px;
+}
+
+.sidebar {
+    position: fixed;
+    right: -250px;
+    width: 250px;
+    height: 103vh;
+    background: rgb(161, 138, 242);
+    transition: all .5s ease;
+    margin-top: -70px;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: rgb(251, 243, 243);
+    text-align: center;
+    line-height: 94px;
+    background: #0d0d0e;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(8, 7, 7);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(245, 248, 249, 0.7);
+    border-bottom: 1px solid rgb(20, 20, 20);
+    transition: .4s;
+    margin: 0;
+}
+
+ul li:hover a {
+    padding-left: 10px
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+}
+
+label #btn {
+    right: 40px;
+    top: 27px;
+    font-size: 35px;
+    color: rgb(254, 249, 249);
+    padding: 1px 5px;
+    transition: all .5s;
+    margin: -20px;
+}
+
+label #cancel {
+    z-index: 1111;
+    right: 0px;
+    top: 17px;
+    font-size: 30px;
+    color: rgb(247, 245, 245);
+    padding: 1px 4px;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+
+#check:checked~.sidebar {
+    right: 0;
+}
+
+#check:checked~label #btn {
+    right: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    opacity: 1;
+    right: 195px;
+}
+
+.navbtn {
+    display: none;
+    visibility: hidden;
+}
+
+.bi-strava {
+    margin-left: 35px;
+    color: white;
+}
+
+.card {
+    margin-left: 25px;
+    border: 1px solid rgb(250, 246, 246) 0.1;
+    font-size: 14px;
+}
+
+.card:hover {
+    transition: all 1s;
+    opacity: 0.8;
+    border-color: rgb(64, 64, 161);
+    box-shadow: 0 0.5em 0.5em -0.2em rgb(37, 37, 103);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+@media(max-width:1000px) {
+    .links a {
+        margin: 0 0 0 70px;
+    }
+
+    .links {
+        margin-right: 100px;
+    }
+
+
+    .bi-strava {
+        margin-left: 15px;
+        font-size: 33px;
+    }
+}
+
+
+@media(max-width:900px) {
+    .links a {
+        margin: 0 0 0 70px;
+    }
+
+    .links {
+        margin-right: 90px;
+    }
+
+
+    .bi-strava {
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .scrollable {
+        overflow-y: scroll;
+        height: 400px;
+        width: 90%;
+        margin-right: 30px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-body {
+        display: none;
+        visibility: hidden;
+    }
+
+    .container {
+        max-width: 50%;
+    }
+
+    .container .skillslinks {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 30px 0 20px;
+    }
+
+    .skills_para {
+        font-size: medium;
+    }
+}
+
+
+
+@media(max-width:700px) {
+    .links a {
+        margin: 0 0 0 50px;
+    }
+
+    .links {
+        margin-right: 40px;
+    }
+
+    .bi-strava {
+        margin-left: 15px;
+        font-size: 28px;
+    }
+
+    .scrollable {
+        overflow-y: scroll;
+        height: 400px;
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .scrollable::-webkit-scrollbar {
+        width: 0.4vw;
+    }
+}
+
+@media(max-width:560px) {
+    .links a {
+        margin: 0 0 0 20px;
+    }
+
+    .links {
+        margin-right: 20px;
+    }
+
+    .bi-strava {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+
+    #sec-3 {
+        background-color: white;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .scrollable {
+        overflow-y: scroll;
+        height: 400px;
+        width: 85%;
+        margin: 30px;
+    }
+
+    #sec-4 {
+        flex-direction: column;
+    }
+
+    .skills_para {
+        font-size: large;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 0 20px 0;
+    }
+
+    .about {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media(max-width:400px) {
+    .navbtn {
+        display: block;
+        visibility: visible;
+    }
+
+    .links {
+        display: none;
+        visibility: hidden;
+    }
+
+    .bi-strava {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+
+    .contact i {
+        font-size: 30px;
+    }
+
+    .body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    #sec-3 a {
+        font-size: small
+    }
+}
+
+#sec-4 button:hover {
+    background-color: rgb(134, 4, 4);
+    transition: all 0.5s;
+}

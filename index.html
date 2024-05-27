@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="navbar navbar-expand-sm sticky-top">
+        <i class="bi bi-strava"></i>
+        <span class=" links">
+            <a href="#sec-1" onclick="slowScroll('#sec-1')">About</a>
+            <a href="#sec-3" onclick="slowScroll('#sec-3')">Skills</a>
+            <a href="#sec-4" onclick="slowScroll('#sec-4')">Projects</a>
+            <a href="#sec-5" onclick="slowScroll('#sec-5')">Contact</a>
+            <a href="https://drive.google.com/file/d/15VBN6dQEUiITFE13RYDYCpJLkUvSsIHj/view?usp=sharing"
+                target="_blank">Resume</a>
+        </span>
+        <span class="navbtn">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="bi bi-list" id="btn"></i>
+                <i class="bi bi-x" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header>navbar</header>
+                <ul>
+                    <li><a href="#sec-1" onclick="slowScroll('#sec-1')">About</a></li>
+                    <li><a href=" #sec-3" onclick="slowScroll('#sec-3')">Skills</a></li>
+                    <li><a href="#sec-4" onclick="slowScroll('#sec-4')">Projects</a></li>
+                    <li><a href="#sec-5" onclick="slowScroll('#sec-5')">Contact</a></li>
+                </ul>
+            </div>
+        </span>
+    </div>
+
+    <section id="section">
+        <section id="sec-1">
+            <div class="about">
+                <div class="text-center">
+                    <img src="console_2242445.png" alt="" style="width:5em">
+                </div>
+                <h1 class="text-center my-3">MOHAMMAD MUNAF</h>
+                    <P class="text-center my-5 h2">An intermedate programmer and MERN-stack developer</P>
+                    <p class="text-center h6 text-muted">Strong technical skills with passionate and
+                        creative problem solver.</p>
+                    <p class="text-center h6 text-muted">Expert to implement different data structure and algorithms</p>
+                </h1>
+        </section>
+        <section id="sec-2">
+            <div class="container">
+                <h1></h1>
+            </div>
+
+        </section>
+        <section id="sec-3">
+            <div class="container">
+                <h1 class="skills_para">Skills</h1>
+                <p class="skills_para">I have successfully solved over 600+ problems on LeetCode, showcasing my
+                    proficiency in Data Structure and algorithms.</p>
+                <div class="skills_para"><a href="https://github.com/MohammadMunaf" target="_blank"><i
+                            class="bi bi-github me-2"></i>Github</a>
+                    <a href="https://leetcode.com/mohammadmehfooz2012/" target="_blank"><i
+                            class="bi bi-cursor me-2 ms-4"></i>LeetCode</a>
+                </div>
+            </div>
+            <div class="scrollable">
+
+                <div class="row m-5">
+                    <h5 class="row text-muted">Frontend</h5>
+                    <ul class="row text-muted">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>Material UI</li>
+                        <li>DOM</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="row m-5">
+                    <h5 class="row text-muted">Backend</h5>
+                    <ul class="row text-muted">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>RESTFULL API</li>
+                        <li>Express.js</li>
+                    </ul>
+                </div>
+                <div class="row m-5">
+                    <h5 class="row text-muted">Database</h5>
+                    <ul class="row text-muted">
+                        <li>Mongodb</li>
+                    </ul>
+                </div>
+                <!-- <div class="row m-5">
+                    <h5 class="row text-muted">Language</h5>
+                    <ul class="row text-muted">
+                        <li>JavaScript</li>
+                    </ul>
+                </div> -->
+                <div class="row m-5">
+                    <h5 class="row text-muted">Technical Subjects</h5>
+                    <ul class="row text-muted">
+                        <li>Data Structure and Algorithms</li>
+                        <li>DBMS</li>
+                        <li>OOPS</li>
+                    </ul>
+                </div>
+                <div class="row m-5">
+                    <h5 class="row text-muted">Others</h5>
+                    <ul class="row text-muted">
+                        <li>Version Control</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="sec-4">
+            <div class="container text-center">
+                <h1 class="text-muted">Projects</h1>
+                <p class="text-muted">
+                    The projects were created with great attention to detail, utilizing a blend of HTML, CSS,
+                    JavaScript, and Node.js with Express.js to leverage the capabilities of these technologies,
+                    resulting in captivating and dynamic user experiences.
+                </p>
+                <a href="https://github.com/MohammadMunaf" target="_blank"><button class="btn btn-danger hidden my-4"
+                        style="width: 11rem;">More
+                        Projects</button></a>
+            </div>
+            <section class="projects d-flex text-center">
+                <div class="hidden">
+                    <div class="card my-2 rounded" style="width: 18rem">
+                        <a href="https://github.com/MohammadMunaf/priceComparison.git" target="_blank">
+                            <img src="Screenshot (246).png" class="card-img-top rounded" alt="...">
+                        </a>
+                    </div>
+
+                    <div class="card rounded" style="width: 18rem;">
+                        <a href="https://mohammadmunaf.github.io/3rdProjectSocial-proof/" target="_blank"><img
+                                src="Screenshot (113).png" class="card-img-top rounded" alt="...">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="hidden">
+                    <div class="card mt-2 pb-1" style="width: 18rem;">
+                        <a href="https://long-sombrero-tick.cyclic.app/" target="_blank"><img src="Screenshot (141).png"
+                                class="card-img-top rounded" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title mb-2">MyCamp</h4>
+                                <p class="text-muted">Discover your perfect campground with ease! My user-friendly
+                                    application not only helps users find the most suited campgrounds but also allows
+                                    them to provide valuable feedback based on their experiences.</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                </div>
+
+            </section>
+        </section>
+        <section id="sec-5">
+            <div class="contacts m-3 text-center">
+                <h1 class="contact">Contact.</h1>
+                <div class="contact">
+                    <p>Get in touch with me via social media or email.</p>
+                </div>
+                <div class="contact mt-5 text-center">
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mohammad-munaf-838043231/" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href=""><i class="bi bi-telephone-fill"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
